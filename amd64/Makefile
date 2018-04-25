@@ -1,4 +1,6 @@
-BOX=vagrant-openbsd-rust.box
+BOX_NAMESPACE=mcandre
+BOX_BASENAME=vagrant-openbsd-rust-amd64
+BOX=$(BOX_BASENAME).box
 
 .PHONY: launch-vm clean-vm clean-boxes clean-vagrant-metadata
 
@@ -20,4 +22,4 @@ $(BOX): clean-boxes clean-vm launch-vm export.Vagrantfile
 	vagrant package --output $(BOX) --vagrantfile export.Vagrantfile
 
 install-box-virtualbox: $(BOX)
-	vagrant box add --force --name mcandre/vagrant-openbsd-rust $(BOX)
+	vagrant box add --force --name $(BOX_NAMESPACE)/$(BOX_BASENAME) $(BOX)
