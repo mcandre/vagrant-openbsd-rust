@@ -2,7 +2,8 @@
 
 # VAGRANT CLOUD
 
-https://app.vagrantup.com/mcandre/boxes/vagrant-openbsd-rust
+* https://app.vagrantup.com/mcandre/boxes/vagrant-openbsd-rust-amd64
+* https://app.vagrantup.com/mcandre/boxes/vagrant-openbsd-rust-i386
 
 # EXAMPLE
 
