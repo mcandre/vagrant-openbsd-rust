@@ -1,5 +1,9 @@
 # vagrant-openbsd-rust: a Vagrant box for building Rust binaries for OpenBSD
 
+# WARNING
+
+Rustup does not yet offer a port for OpenBSD, so Rust nightly is difficult to setup on these hosts.
+
 # VAGRANT CLOUD
 
 * https://app.vagrantup.com/mcandre/boxes/vagrant-openbsd-rust-amd64
